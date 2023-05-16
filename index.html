@@ -4,184 +4,184 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
-<body class="vh-100">
-
-  <div class="container-fluid position-relative">
-    <div class="container">
-      <div class="header py-4 d-flex justify-content-between align-items-center">
-        <div class="logo">
-          <img src="images/logo-bookmark.svg" alt="">
-        </div>
-        <div class="links w-50 d-flex gap-5 align-items-center justify-content-end" >
-          <a href="#" class="text-decoration-none">FEATURE</a>
-          <a href="#" class="text-decoration-none">PRICING</a>
-          <a href="#" class="text-decoration-none">CONTACT</a>
-          <button class="btn btn-danger ">LOGIN</button>
-        </div>
+<body>
+<!-- header section -->
+<div class="container px-4">
+  <nav class="d-flex justify-content-between align-items-center">
+    <div class="logo my-4">
+      <img src="images/logo-bookmark.svg" alt="logo" style="cursor: pointer;">
+    </div>
+    <div class="nav-icon">
+      <img src="images/icon-hamburger.svg" alt="menu" style="cursor: pointer;">
+      <div class="icon-link">
+        <img src="images/icon-close.svg" alt="">
+        <a href="#">FEATURES</a>
+        <a href="#">PRICING</a>
+        <a href="#">CONTACT</a>
+        <a href="#">LOGIN</a>
       </div>
     </div>
-    <div class="container mt-5 d-flex justify-content-between">
-      <section class="text-sec">
-        <h1>A simple Bookmark<br>Manager</h1>
-        <p class="text mt-4">A clean and Simple interface to organize your favourite website. Open a new browser tab and see your site load instantly. Try it for free</p>
-        <div class="button-group mt-4 gap-2 d-flex">
-          <button type="button" class="btn btn-primary chrome">Get it on Chrome</button>
-          <button type="button" class="btn btn-primary second ">Get it on Firefox</button>
-        </div>
-      </section>
+  </nav>
+</div>
 
-      <!--feature section  -->
-      <section class="shape-section">
-        <img src="images/illustration-hero.svg" alt="">
-        <p></p>
-      </section>
+<!-- first section -->
+<div class="container-fluid">
+  <div class="container mt-5 ">
+    <img src="images/illustration-hero.svg" alt="hero image" style="width: 300px">
+    <div class="text-section text-center mt-5">
+      <h2 style="font-size: 2rem; letter-spacing: .4px;">A Simple Bookmark <br>Manger</h2>
+      <p class="mx-auto bookmark-text" style="font-size: 15px; width: 290px;">A clean and simple interface to organize your favourite websites. open a new browser tab and see your site load instantly. try it for free</p>
+      <div class="buttons mt-4">
+        <button>Get it on chrome</button>
+        <button>Get it on firefox</button>
+      </div>
     </div>
-    <div class="container" style="margin-top: 10rem;">
-      <h2 class="text-center">Features</h2>
-      <p class="mt-4 text-center text mx-auto">Our aim is to make it quick and easy for you to access your favorite website. Your bookmarks sync between your videos so you can access them on the go</p>
+  </div>
+</div>
+
+<!-- second section -->
+<div class="container mb-5" style="margin-top: 7.5rem;">
+  <h2 class="text-center">Features</h2>
+  <p class="mx-auto text-center mb-4" style="font-size: 15px; width: 295px; color: rgb(163, 161, 161);">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmrks sync between your devices so you can access them on the go</p>
+  <!-- slidera -->
+  <div class="sliders">
+    <div class="sliderOne my-2 first-text">
+      <p class="text-center ">Simple Bookmarking</p>
     </div>
-    <section class="slider mx-auto">
-    <nav class="d-flex justify-content-center my-5 gap-5 ">
-      <span class="py-2 first-border">Simple Bookmarking</span>
-      <span class="py-2 ">Speedy Searching</span>
-      <span class="py-2 ">Easy Sharing</span>
-    </nav>
-    </section>
-    <div class="container my-5 d-flex justify-content-between">
-      <img src="images/illustration-features-tab-1.svg" alt="" class="m-5">
-      <div class="bookmark-sec ">
-        <h3>Bookmark in one click</h3>
-        <p class="mt-3">Oraganize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
-          control how you manage your favorite sites.</p>
-        <button type="button" class="btn btn-primary mt-3 info">Primary</button>
-      </div>
-      </div>
+    <div class="sliderTne pt-2">
+      <p class="text-center ">Speed Searching</p>
+    </div>
+    <div class="sliderOne">
+      <p class="text-center">Easy sharing</p>
+    </div>
+  </div>
+</div>
 
-    <!-- extension section -->
-      <div class="container" style="margin-top: 10rem;">
-        <h2 class="text-center">Download the extension</h2>
-        <p style="width: 29rem" class="text-center mx-auto my-4">We'vw got more browser in the pipelin. Please do let us know if you've got favourite you'd like us to priotize.</p>
-        <div class="container d-flex gap-3 mt-5">
-          <div class="icons mx-auto d-flex gap-3 " style="height: 30rem; height: 20rem; margin-bottom: 9rem;">
-          <div class="card" style="width: 18rem;">
-            <img src="images/logo-chrome.svg" style="width:100px" class="card-img-top mx-auto mt-3" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Add to Chrome</h5>
-              <p class="card-text pb-5 text-center">Mininum version 62</p>
-              <a href="#" class="btn btn-primary w-100">Add & install Extension</a>
-            </div>
-          </div>
-          <div class="card mt-3" style="width: 18rem; height: 20rem;">
-            <img src="images/logo-firefox.svg" style="width:100px" class="card-img-top mx-auto mt-3" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Add to Firefox</h5>
-              <p class="card-text pb-5 mx-auto text-center">Mininum verson 55</p>
-              <a href="#" class="btn btn-primary w-100">Add & install Extension</a>
-            </div>
-          </div>
-          <div class="card mt-5" style="width: 18rem; height: 20rem;">
-            <img src="images/logo-opera.svg" style="width:100px" class="card-img-top mx-auto mt-3" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Add to Opera</h5>
-              <p class="card-text pb-5 text-center">Mininum version 46 </p>
-              <a href="#" class="btn btn-primary w-100">Add & install Extension</a>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-<!-- FAQ section -->
-      <div class="container mt-5">
-        <h2 class="mx-auto mt-5 mb-3 text-center">Frequently asked questions</h2>
-        <p class="text-center mx-auto" style="width: 26rem">Here are some of our FAQs. If you have any questions you'd like answer please feel free to email us</p>
-        <div class="accordion w-50 mx-auto mt-4" id="accordionExample">
-          <div class="accordion-item mt-5 border-left">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                aria-expanded="true" aria-controls="collapseOne">
-                What is bookmark?
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds
-                the appropriate classes that we use to style each element. These classes control the overall appearance,
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item  border-left">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                aria-expanded="false" aria-controls="collapseTwo">
-                How can i request a new browser?
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin
-                adds the appropriate classes that we use to style each element. These classes control the overall appearance
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item  border-left">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                aria-expanded="false" aria-controls="collapseThree">
-                Is ther a mobile app?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-                adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item  border-left">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                aria-expanded="false" aria-controls="collapseThree">
-                What about other Chromium browsers?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-                adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-              </div>
-            </div>
-          </div>
-          <button class="d-flex more-info mx-auto my-5">More info</button>
-        </div>
-      </div>
+<!-- Third section -->
+<div class="container">
+  <img src="images/illustration-features-tab-1.svg" alt="" style="width: 300px" class="mb-5">
+  <div class="booking-text my-4">
+    <h2 class="text-center">Bookmark in one click</h2>
+    <p class="text-center mx-auto" style="width: 320px; text-align: center; color: rgb(163, 161, 161);">Organize your bookmark however you like. Our simple drag-and-drop interface gives you complete control over how you manage your fevourite sites</p>
+  </div>
+</div>
 
-      <!-- footer section -->
-      <div class="container-fluid footer">
-       <div class="container mt-5 py-5">
-         <p class="color text-center mb-4">35.000+ ALREADY JOINED</p>
-          <h2 class="color mx-auto text-center mb-4" style="width: 26rem">Stay up-to-date with what we're doing</h2>
-          <div class="input-group mb-3 gap-3 justify-content-center d-flex">
-          <input type="text" style="width: 300px; border-radius: 5px; outline: none; border: none;" placeholder="Recipient's username" aria-label="Recipient's username"
-            aria-describedby="button-addon2">
-          <button class="btn btn-outline-secondary" style="color: white; border-radius: 5px; outline: none; border: none; background-color: hsl(0, 94%, 66%);" type="button" id="button-addon2">Contact us</button>
+<!-- fifth section -->
+<div class="container mt-5"  >
+  <div class="booking-text my-4" >
+    <h2 class="text-center" style="margin-top: 10rem;" >Download the extension</h2>
+    <p class="text-center mx-auto" style="width: 320px; text-align: center; color: rgb(163, 161, 161);">Organize your
+      bookmark however you like. Our simple drag-and-drop interface gives you complete control over how you manage your
+      fevourite sites</p>
+      <div class="cards">
+        <div class="cardOne">
+          <img src="images/logo-chrome.svg" alt="">
+          <div class="chrome-text">
+            <span class="text-center mx-auto">Add to Chrome</span>
+            <span class="text-center mx-auto">Minimium version 62</span>
+          </div>
+          <button>Add & install extension</button>
         </div>
+        <div class="cardTwo">
+          <img src="images/logo-firefox.svg" alt="">
+          <div class="chrome-text">
+            <span class="text-center mx-auto">Add to Firefox</span>
+            <span class="text-center mx-auto">Minimium version 56</span>
+          </div>
+          <button>Add & install extension</button>
         </div>
-      </div>
-      <div class="container-fluid " style="background-color: hsl(229, 31%, 21%);">
-        <div class="container py-4 d-flex gap-5">
-          <img src="images/logo-bookmark copy.svg" style="accent-color: white;" alt="">
-          <a href="#" style="text-decoration: none; color: rgb(192, 192, 192); font-size: .8rem;">FEATURES</a>
-          <a href="#" style="text-decoration: none; color: rgb(192, 192, 192); font-size: .8rem;">PRICING</a>
-          <a href="#" style="text-decoration: none; color: rgb(192, 192, 192); font-size: .8rem;">CONTACT</a>
+        <div class="cardThree">
+          <img src="images/logo-opera.svg" alt="">
+          <div class="chrome-text">
+            <span class="text-center mx-auto">Add to Opera</span>
+            <span class="text-center mx-auto">Minimium version 46</span>
+          </div>
+          <button>Add & install extension</button>
         </div>
       </div>
   </div>
+</div>
+
+<!-- FAQ section -->
+<div class="container ">
+  <h2 class="text-center mx-auto" style="margin-top: 10rem; width: 300px;"> Frequently Asked Questions </h2>
+  <p class="text-center mx-auto" style="width: 320px; text-align: center; color: rgb(163, 161, 161);">Organize your
+    bookmark however you like. Our simple drag-and-drop interface gives you complete control over how you manage your
+    fevourite sites</p>
+    <!-- drop down questions -->
+    <div class="drop-down d-block mx-sm-auto">
+      <div class="first-drop hidden d-flex justify-content-between pb-3" style="width: 330px;">
+        <div class="drop-text ">
+          <span>What is bookmark?</span>
+          <p style=" color: rgb(200, 200, 200);" class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia doloremque, atque modi eveniet eligendi eos ex quasi excepturi consectetur, voluptatibus iusto</p>
+        </div>
+        <img src="images/icon-arrow.svg" style="height: 13px; width: 15px;">
+      </div>
+      <div class="second-drop  hidden d-flex justify-content-between pb-3 mt-3" style="width: 330px;">
+        <div class="drop-text">
+          <span>How can I request a new browser?</span>
+          <p style=" color: rgb(200, 200, 200);" class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia doloremque, atque modi eveniet eligendi eos ex
+            quasi excepturi consectetur, voluptatibus iusto</p>
+        </div>
+        <img src="images/icon-arrow.svg" style="height: 13px; width: 15px;">
+      </div>
+      <div class="third-drop hidden d-flex justify-content-between pb-3 mt-3" style="width: 330px;">
+        <div class="drop-text">
+          <span>Is there a mobile app?</span>
+          <p style=" color: rgb(200, 200, 200);" class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia doloremque, atque modi eveniet eligendi eos ex
+            quasi excepturi consectetur, voluptatibus iusto</p>
+        </div>
+        <img src="images/icon-arrow.svg" style="height: 13px; width: 15px;">
+      </div>
+      <div class="fourth-drop hidden d-flex justify-content-between pb-3 mt-3" style="width: 330px;">
+        <div class="drop-text">
+          <span>What about other chrome browsers?</span>
+          <p style=" color: rgb(200, 200, 200);" class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia doloremque, atque modi eveniet eligendi eos ex
+            quasi excepturi consectetur, voluptatibus iusto</p>
+        </div>
+        <img src="images/icon-arrow.svg" style="height: 13px; width: 15px;">
+      </div>
+    </div>
+    <button class="my-5 mx-auto d-block" style="border: none; outline: none; width: 120px; height: 40px; border-radius: 5px; color: white; background-color: hsl(231, 69%, 60%); font-weight: 500;">More Info</button>
+</div>
+
+<!-- before footer -->
+<div class="container-fluid" style="background-color: hsl(231, 69%, 60%);">
+  <div class="container py-5">
+    <p style="font-family: rubik; font-size: .7rem; color: white;" class="text-center">35,000+ ALREADY JOINED</p>
+    <h2 class="text-center" style="color: white;">Stay up-to-date with what we're doing</h2>
+    <div class="button-sec d-flex flex-column gap-2">
+      <input type="text" placeholder="" style="color: white;font-weight: 500; outline: none;border: none;border-radius: 5px;height: 40px;">
+      <div class="email-error">
+        <p style="background-color: hsl(0, 94%, 66%);" class="p-2">Please enter a valid email</p>
+      </div>
+      <button class="contact" style="color: white;font-weight: 500; border: none;border-radius: 5px;height: 35px;background-color: hsl(0, 94%, 66%)
+;">Contact Us</button>
+    </div>
+  </div>
+</div>
+
+<!-- footer sec -->
+<div class="container-fluid" style="background-color: hsl(229, 31%, 21%);">
+  <div class="container py-3 d-flex flex-column gap-4">
+    <img src="images/logo-bookmark copy.svg" alt="footer logo" style="width: 100px;" class="d-block mx-auto mt-4">
+    <a href="#" class="d-block mx-auto" style="font-family: rubik;text-decoration: none;color: white;font-size: .8rem;">FEATURE</a>
+    <a href="#" class="d-block mx-auto" style="font-family: rubik;text-decoration: none;color: white;font-size: .8rem;">PRICING</a>
+    <a href="#" class="d-block mx-auto" style="font-family: rubik;text-decoration: none;color: white;font-size: .8rem;">CONTACT</a>
+    <div class="social-icons d-flex gap-3 mx-auto">
+      <img src="images/icon-facebook.svg" alt="">
+      <img src="images/icon-twitter.svg" alt="">
+    </div>
+  </div>
+</div>
+  
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

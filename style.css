@@ -1,105 +1,116 @@
-.links{
-    font-family: Rubik;
+.bookmark-text{
+    color: rgb(163, 161, 161);
 }
-.btn{
-    font-size: .8rem;
-    width: 100px;
-    font-weight: 700;
-    height: 2.5rem;
-}
-.text{
-    width: 30rem;
-}
-.first-border{
-    border-bottom: 2.5px solid red;
-    width: 180px;
-    text-align: center;
-}
-.text{
-    width: 28rem;
-}
-.slider{
-    border-bottom: 1px solid rgb(199, 199, 199);
-    width: 500px;
-    height: 43px;
-}
-.shape-section p::before{
-    content: " ";
-    position: absolute;
-    display: block;
-    width: 40rem;
-    height: 25rem;
-    border-radius: 45% 0 0 45%;
-    z-index: -1;
-    top: 13rem;
-    right: 0rem;
-    background: hsl(231, 69%, 60%);
-}
-.shape-section p::after {
-    content: " ";
-    position: absolute;
-    display: block;
-    width: 50rem;
-    height: 25rem;
-    border-radius: 0 45% 45% 0;
-    z-index: -1;
-    top: 75rem;
-    left: 0rem;
-    background: hsl(231, 69%, 60%);
-}
-.card-con{
-    height: 400px;
-    margin-inline: auto;
-}
-.border-left{
-    border-left: none;
-    border-right: none;
+.buttons button{
+    border: none;
     outline: none;
-}
-.color{
-    color: white;
-}
-.more-info{
-    width: 100px;
-    justify-content: center;
+    width: 160px;
     height: 40px;
-    align-items: center;
-    color: white;
-    outline: none;
-    border: none;
     border-radius: 5px;
-    background: hsl(231, 69%, 60%);
+    cursor: pointer;
+    transition: background-color .7s ease-in-out, color .7s ease-in-out;
 }
-.footer{
-    background: hsl(231, 69%, 60%);
-    margin-top: 9rem;
-}
-.bookmark-sec{
-    margin-top: 6rem;
-    margin-left: 2rem;
-}
-.chrome{
+.buttons button:first-child{
     background-color: hsl(231, 69%, 60%);
+    color: white;
+    font-weight: 500;
 }
-.text-sec{
-    margin-top: 5rem;
+.buttons button:last-child {
+    color: rgb(13, 13, 13);
+    font-weight: 500;
+    background-color: rgb(242, 242, 242);
 }
-p{
-    color: hsl(229, 8%, 60%);
-}
-.second{
+.buttons button:hover{
     background-color: transparent;
+    border: 1px solid hsl(231, 69%, 60%);
+    color:hsl(231, 69%, 60%);
+}
+.sliderOne{
+    border-top: 1px solid rgb(232, 232, 232);
+    border-bottom: 1px solid rgb(232, 232, 232);
+    padding-top: 15px;
+}
+.first-text{
+    border-bottom: 3px solid red;
+}
+.cards{
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    gap: 30px;
+}
+.cards img{
+    width: 80px;
+}
+.cards button{
+    height: 35px;
+    width: 220px;
     border: none;
-    color: black;
-    box-shadow: 0 1px 5px rgb(177, 177, 177);
+    outline: none;
+    border-radius: 5px;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    font-weight: 500;
 }
-.btn-primary{
-    width: 130px;
+.cards span:last-child{
+    font-size: .8rem;
+    color: rgb(163, 161, 161);
 }
-.card{
-    border: none;
-    box-shadow: 0 0 5px rgb(210, 210, 210);
+.cards span:first-child {
+    color: hsl(229, 31%, 21%);
+    font-weight: 600;
 }
-a{
-    color: black;
+.chrome-text{
+    display: flex;
+    flex-direction: column;
+}
+.cardOne, .cardTwo, .cardThree{
+    width: 230px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgb(235, 235, 235);
+    margin-inline: auto;
+    border-radius: 5px;
+    padding: 20px 0;
+}
+.first-drop, .second-drop, .third-drop, .fourth-drop{
+    border-bottom: 1px solid rgb(228, 228, 228);
+    cursor: pointer;
+}
+.first-drop,
+.second-drop,
+.third-drop,
+.fourth-drop{
+    color: hsl(229, 31%, 21%);
+    font-weight: 500;
+}
+.first-drop:hover,
+.second-drop:hover,
+.third-drop:hover,
+.fourth-drop:hover{
+    color: hsl(0, 94%, 66%);
+}
+.hidden p{
+   display: none; 
+}
+.img-rotate img{
+    rotate: 180deg;
+    color: hsl(0, 94%, 66%);
+}
+.email-error{
+    margin-top: -9px;
+    display: none;
+}
+.icon-link{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0.4rem;
+    background:hsl(231, 69%, 60%);
+    top: 0;
+    color: white;
+    width: 370px;
 }
